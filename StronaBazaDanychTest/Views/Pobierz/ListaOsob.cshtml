@@ -1,0 +1,16 @@
+﻿@model StronaBazaDanychTest.StronaCwiczenieBazaEntities
+
+@{
+    ViewBag.Title = "ListaOsob";
+}
+
+<h2><b>Lista Osób</b></h2>
+<body>
+    @foreach (var a in Model.Osoby)
+    {
+    <p>@a.IdOsoby, @a.Imie, @a.Nazwisko, @a.Wiek</p>
+        }
+       
+    <p>@Html.ActionLink("Do pobierz", "Index")</p>
+</body>
+

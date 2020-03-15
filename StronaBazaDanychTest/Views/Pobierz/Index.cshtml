@@ -1,0 +1,20 @@
+﻿@model StronaBazaDanychTest.Osoby
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Pobierz</h2>
+
+<body>
+    @using (Html.BeginForm())
+    {
+        <p>Imię: @Html.TextBoxFor(x => x.Imie) </p>
+        <p>Nazwisko: @Html.TextBoxFor(x => x.Nazwisko)</p>
+        <p>Wiek: @Html.TextBoxFor(x => x.Wiek)</p>
+    <input type="submit" value="Wyślij" />
+    }
+
+
+</body>
+

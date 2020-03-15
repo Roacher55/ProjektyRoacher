@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StronaCwiczenieBazaModelStoreContainer" CdmEntityContainer="StronaCwiczenieBazaEntities">
+    <EntitySetMapping Name="Osoby">
+      <EntityTypeMapping TypeName="StronaCwiczenieBazaModel.Osoby">
+        <MappingFragment StoreEntitySet="Osoby">
+          <ScalarProperty Name="IdOsoby" ColumnName="IdOsoby" />
+          <ScalarProperty Name="Imie" ColumnName="Imie" />
+          <ScalarProperty Name="Nazwisko" ColumnName="Nazwisko" />
+          <ScalarProperty Name="Wiek" ColumnName="Wiek" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

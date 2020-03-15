@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StronaCwiczenieBazaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Osoby">
+    <Key>
+      <PropertyRef Name="IdOsoby" />
+    </Key>
+    <Property Name="IdOsoby" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Imie" Type="varchar" MaxLength="25" />
+    <Property Name="Nazwisko" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Wiek" Type="int" />
+  </EntityType>
+  <EntityContainer Name="StronaCwiczenieBazaModelStoreContainer">
+    <EntitySet Name="Osoby" EntityType="Self.Osoby" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
