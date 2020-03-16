@@ -2,15 +2,29 @@
 
 @{
     ViewBag.Title = "ListaOsob";
+
 }
+
 
 <h2><b>Lista Osób</b></h2>
 <body>
     @foreach (var a in Model.Osoby)
     {
-    <p>@a.IdOsoby, @a.Imie, @a.Nazwisko, @a.Wiek</p>
-        }
-       
+
+        
+
+            
+    <p>
+        @a.IdOsoby, @a.Imie, @a.Nazwisko, @a.Wiek @Html.ActionLink("Detale", "Pokaz", a);
+        
+
+
+    </p>
+            }
+        
+
+
     <p>@Html.ActionLink("Do pobierz", "Index")</p>
+    <p>@Html.ActionLink("Do Usun", "Usun")</p>
 </body>
 

@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 
+
 namespace StronaBazaDanychTest.Controllers
 {
     public class PobierzController : Controller
@@ -24,5 +25,32 @@ namespace StronaBazaDanychTest.Controllers
             db.SaveChanges();
             return View("ListaOsob", db);
         }
+
+        [HttpGet]
+        public ActionResult Usun()
+        {
+            return View();
+
+
+        }
+        [HttpPost]
+        public ActionResult Usun(Osoby o)
+        {
+            db.Osoby.Attach(o);
+            db.Osoby.Remove(o);
+            db.SaveChanges();
+            return View("ListaOsob", db);
+
+
+        }
+
+        public ActionResult Pokaz(Osoby o)
+        {
+            ;
+            return View(o);
+
+
+        }
+
     }
 }

@@ -1,0 +1,16 @@
+﻿@model StronaBazaDanychTest.Osoby
+
+@{
+    ViewBag.Title = "Usun";
+}
+
+<h2>Usun</h2>
+
+<body>
+    @using (Html.BeginForm())
+    {
+        <p>Usun pi Id: @Html.TextBoxFor(x => x.IdOsoby) </p>
+        <input type="submit" value="Usun" />
+    }
+</body>
+
