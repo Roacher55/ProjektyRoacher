@@ -51,6 +51,37 @@ namespace StronaBazaDanychTest.Controllers
 
 
         }
+        [HttpGet]
+        public ActionResult Wyszukaj()
+        {
+
+            return View();
+
+
+        }
+
+        [HttpPost]
+        public ActionResult Wyszukaj(Osoby o)
+        {
+
+            List<Osoby> data = new List<Osoby>();
+
+
+            
+                
+                    //data = db.Osoby.Where(x => x.Imie == o);
+                    data = db.Osoby.Where(x => x.Imie == o.Imie).ToList();
+                return View("ListaOsob2", data);
+            
+        }
+
+
+
+
+
+
+
+        
 
     }
 }

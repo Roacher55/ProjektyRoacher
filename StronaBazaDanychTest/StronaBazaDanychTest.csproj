@@ -214,6 +214,8 @@
     <Content Include="Views\Pobierz\ListaOsob.cshtml" />
     <Content Include="Views\Pobierz\Usun.cshtml" />
     <Content Include="Views\Pobierz\Pokaz.cshtml" />
+    <Content Include="Views\Pobierz\Wyszukaj.cshtml" />
+    <Content Include="Views\Pobierz\ListaOsob2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

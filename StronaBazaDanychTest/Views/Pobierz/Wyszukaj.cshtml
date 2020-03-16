@@ -1,0 +1,15 @@
+﻿@model StronaBazaDanychTest.Osoby
+
+@{
+    ViewBag.Title = "Wyszukaj";
+}
+
+<h2><b>Wyszukaj</b></h2>
+<body>
+    @using (Html.BeginForm())
+    {
+        <p>Wyszukaj po imieniu: @Html.TextBoxFor(x => x.Imie) </p>
+        <input type="submit" value="Wyszukaj" />
+    }
+</body>
+
