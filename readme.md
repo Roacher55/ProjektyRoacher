@@ -1,0 +1,1 @@
+Operacje CRUD C# MVC, dane uzyskane z bazy danych SQL przy pomocy Entity Framework
